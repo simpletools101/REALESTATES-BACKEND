@@ -1,0 +1,47 @@
+{
+  "users": [
+     {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "email": "admin@realevr.com",
+      "fullName": "Admin User",
+      "membershipPlan": "premium",
+      "membershipStartDate": null,
+      "membershipEndDate": null,
+      "role": "admin",
+      "isVerified": true
+    },
+    {
+      "id": 2,
+      "username": "agent",
+      "password": "admin123",
+      "email": "agent@realevr.com",
+      "fullName": "Property Agent",
+      "membershipPlan": "premium",
+      "membershipStartDate": null,
+      "membershipEndDate": null,
+      "role": "agent",
+      "isVerified": true
+    },
+    {
+      "id": 3,
+      "username": "user",
+      "password": "admin123",
+      "email": "user@example.com",
+      "fullName": "Regular User",
+      "membershipPlan": "basic",
+      "membershipStartDate": null,
+      "membershipEndDate": null,
+      "role": "normal",
+      "isVerified": true
+    }
+  ],
+  "properties": [],
+  "amenities": [],
+  "propertyTypes": [],
+  "userCurrentId": 4,
+  "propertyCurrentId": 1,
+  "amenityCurrentId": 6,
+  "propertyTypeCurrentId": 8
+}
