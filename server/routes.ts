@@ -8,10 +8,8 @@ import path from 'path'
 import { sseTourProgress } from './upload'
 import { getTourConfig } from './tour-config'
 import * as dropboxStorage from './dropbox-storage'
-
 import fs from 'fs'
 import { createTablesIfNotExist, DynamoDBUtils, TABLES, toNumericId, toStringId } from './dynamodb'
-
 import { uploadPropertyImage, uploadVirtualTour, handleUploadErrors, setupStaticFileRoutes } from './upload'
 
 // Middleware to check if user is an admin or property manager
@@ -82,6 +80,8 @@ const noCacheMiddleware = (req: Request, res: Response, next: NextFunction) => {
 export async function registerRoutes(app: Express): Promise<Server> {
     // Setup authentication routes
     setupAuth(app)
+
+    //main for the app
 
     // Apply no-cache middleware to all API routes
     app.use('/api', noCacheMiddleware)
